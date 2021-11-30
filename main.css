@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&display=swap');
+
+input[type=text]{
+	width:40%;
+}
+
+*{
+	font-family:Manjari;
+	font-weight: 700;
+	font-size:20px;
+	
+}
+
+#headerBar{
+	border:2px solid teal;
+	width:100%;
+	height:130px;
+	background-color: teal;
+}
+
+
+
+hr{
+	border: 3px solid teal;
+}
+
+
+.inputValues, #displayNote, #note{
+	margin-left:20%;
+}
+
+.inputValues{
+	color:teal;
+	font-weight:bold;
+	font-size:20px;
+}
+
+body{
+	background:url(https://res.cloudinary.com/adebayo59/image/upload/v1635964666/wrinkled_utrl65.jpg);
+}
+
+#note, #submit{
+	color:white;
+	background-color: teal;
+	width: 140px;
+	height: 50px;
+	font-size: 20px;	
+}
