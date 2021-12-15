@@ -10,7 +10,7 @@ function submitNote(){
 	if(fullname.value ==='' || ourdate.value ==='' || ourtime.value==='' || locate.value==='' || ourClient.value==='' || textArea.value===''){
 		alert('please fill out the form');
 		return;
-		//return tells the code to stop
+		
 	}
 	display.innerHTML = 
 `	Staff Name:${fullname.value}<br>
