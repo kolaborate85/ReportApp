@@ -61,7 +61,7 @@ function saveNote(){
               	    new docx.TextRun(ourClient.value)
                 ],
               }),
-					new docx.Paragraph({
+		new docx.Paragraph({
                   children: [
               	    new docx.TextRun(textArea.value)
                 ],
