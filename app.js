@@ -29,41 +29,41 @@ function saveNote(){
               new docx.Paragraph({
                 children: [
                   new docx.TextRun({
-										text:"Report App",
-									size:25,
-										bold:true,
-										allCaps: true,
-									})
+			text:"Report App",
+			size:25,
+			bold:true,
+			allCaps: true,
+			})
                 ],
               }),
-				      new docx.Paragraph({
-                children: [
-              new docx.TextRun(fullname.value)
+		new docx.Paragraph({
+                  children: [
+              	    new docx.TextRun(fullname.value)
+                ],
+              }),
+		new docx.Paragraph({
+                  children: [
+              	    new docx.TextRun(ourdate.value)
+                ],
+              }),
+		new docx.Paragraph({
+                  children: [
+              	    new docx.TextRun(ourtime.value)
+                ],
+              }),
+	        new docx.Paragraph({
+                  children: [
+                    new docx.TextRun(locate.value)
+                ],
+              }),
+		new docx.Paragraph({
+                  children: [
+              	    new docx.TextRun(ourClient.value)
                 ],
               }),
 					new docx.Paragraph({
-                children: [
-              new docx.TextRun(ourdate.value)
-                ],
-              }),
-					new docx.Paragraph({
-                children: [
-              new docx.TextRun(ourtime.value)
-                ],
-              }),
-					new docx.Paragraph({
-                children: [
-              new docx.TextRun(locate.value)
-                ],
-              }),
-					new docx.Paragraph({
-                children: [
-              new docx.TextRun(ourClient.value)
-                ],
-              }),
-					new docx.Paragraph({
-                children: [
-              new docx.TextRun(textArea.value)
+                  children: [
+              	    new docx.TextRun(textArea.value)
                 ],
               }),
             ],
@@ -75,7 +75,7 @@ function saveNote(){
           saveAs(blob, "Report.docx");
           console.log("Document created successfully");
         });
-			LinkToEMail()
+	 LinkToEMail()
       }
 
 function LinkToEMail(href) {
